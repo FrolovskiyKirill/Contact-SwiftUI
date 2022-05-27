@@ -17,12 +17,18 @@ struct DetailedContactInfo: View {
     var body: some View {
         
         List {
-            Image(systemName: "person.2.wave.2.fill")
+            Image(systemName: "person.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 150, height: 150)
-            Text("\(phoneNumber)")
-            Text("\(email)")
+                .frame(height: 150, alignment: .center)
+            HStack {
+                Image(systemName: "phone").foregroundColor(.blue)
+                Text("\(phoneNumber)")
+            }
+            HStack {
+                Image(systemName: "tray").foregroundColor(.blue)
+                Text("\(email)")
+            }
         }
         .navigationTitle("\(fullName)")
     }
