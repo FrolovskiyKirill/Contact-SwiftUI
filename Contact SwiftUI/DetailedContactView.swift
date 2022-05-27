@@ -15,8 +15,14 @@ struct DetailedContactView: View {
     
             List(persons, id: \.self) { person in
                 Section(header: Text("\(person.fullName)")) {
-                    Text("\(person.phoneNumber)")
-                    Text("\(person.email)")
+                    HStack {
+                        Image(systemName: "phone").foregroundColor(.blue)
+                        Text("\(person.phoneNumber)")
+                    }
+                    HStack {
+                        Image(systemName: "tray").foregroundColor(.blue)
+                        Text("\(person.email)")
+                    }
                 }
             }
             .listStyle(.plain)

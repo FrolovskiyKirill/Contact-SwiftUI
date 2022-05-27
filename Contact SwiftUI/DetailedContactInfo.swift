@@ -10,12 +10,21 @@ import SwiftUI
 struct DetailedContactInfo: View {
     
     
-    let name: String
+    let fullName: String
+    let phoneNumber: String
+    let email: String
     
     var body: some View {
         
-            Text("\(name)")
-        
+        List {
+            Image(systemName: "person.2.wave.2.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150)
+            Text("\(phoneNumber)")
+            Text("\(email)")
+        }
+        .navigationTitle("\(fullName)")
     }
 }
 
