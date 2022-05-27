@@ -20,8 +20,9 @@ struct DetailedContactView: View {
                 }
             }
             .listStyle(.plain)
-        
+            .navigationTitle("Numbers")
     }
+    
 }
 
 struct DetailedContactView_Previews: PreviewProvider {

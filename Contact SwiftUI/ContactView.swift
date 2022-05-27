@@ -13,22 +13,26 @@ struct ContactView: View {
     
     var body: some View {
         
-        TabView {
-            List(persons, id: \.self) { person in
-                Text("\(person.fullName)")
-            }
-            .listStyle(.plain)
-            .tabItem {
-                Image(systemName: "person.crop.circle")
-                Text("Contacts")
-            }
-            DetailedContactView(persons: persons)
-                .tabItem {
-                    Image(systemName: "phone.fill")
-                    Text("Numbers")
+        NavigationView {
+            TabView {
+                List(persons, id: \.self) { person in
+                    NavigationLink(destination: DetailedContactInfo(name: person.name)) {
+                        Text("\(person.fullName)")
+                    }
                 }
+                .listStyle(.plain)
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Contacts")
+                }
+                DetailedContactView(persons: persons)
+                    .tabItem {
+                        Image(systemName: "phone.fill")
+                        Text("Numbers")
+                    }
+            }
+            .navigationTitle("Contacts")
         }
-
     }
 }
 
