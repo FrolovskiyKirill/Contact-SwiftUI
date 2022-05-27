@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DetailedContactInfo: View {
     
-    
     let fullName: String
     let phoneNumber: String
     let email: String

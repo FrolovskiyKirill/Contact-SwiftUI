@@ -12,7 +12,6 @@ struct DetailedContactView: View {
     
     var body: some View {
         
-    
             List(persons, id: \.self) { person in
                 Section(header: Text("\(person.fullName)")) {
                     HStack {
@@ -28,7 +27,6 @@ struct DetailedContactView: View {
             .listStyle(.plain)
             .navigationTitle("Numbers")
     }
-    
 }
 
 struct DetailedContactView_Previews: PreviewProvider {
