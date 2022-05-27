@@ -29,7 +29,7 @@ struct ContactView: View {
                 }
                 .listStyle(.plain)
                 .tabItem {
-                    Image(systemName: "person.crop.circle")
+                    Image(systemName: "person.2.fill")
                     Text("Contacts")
                 }
                 DetailedContactView(persons: persons)
