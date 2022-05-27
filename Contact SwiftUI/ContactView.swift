@@ -16,13 +16,12 @@ struct ContactView: View {
         NavigationView {
             TabView {
                 List(persons, id: \.self) { person in
-                    NavigationLink(
-                        destination: DetailedContactInfo(
-                            fullName: person.fullName,
-                            phoneNumber: person.phoneNumber,
-                            email: person.email
-                        )
-                    )
+                    NavigationLink(destination:
+                                    DetailedContactInfo(
+                                        fullName: person.fullName,
+                                        phoneNumber: person.phoneNumber,
+                                        email: person.email
+                                    ))
                     {
                         Text("\(person.fullName)")
                     }

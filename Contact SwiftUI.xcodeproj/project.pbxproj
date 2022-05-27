@@ -63,8 +63,8 @@
 				ED23D7A3283FD0F7007F4A30 /* ContactView.swift */,
 				ED23D7BD284129B3007F4A30 /* DetailedContactView.swift */,
 				ED23D7B3283FDB17007F4A30 /* DetailedContactInfo.swift */,
-				ED23D7AF283FD10F007F4A30 /* Person.swift */,
-				ED23D7B1283FD134007F4A30 /* DataManager.swift */,
+				ED23D7BF28417A08007F4A30 /* Model */,
+				ED23D7C028417A18007F4A30 /* Services */,
 				ED23D7A5283FD0FA007F4A30 /* Assets.xcassets */,
 				ED23D7A7283FD0FA007F4A30 /* Preview Content */,
 			);
@@ -77,6 +77,22 @@
 				ED23D7A8283FD0FA007F4A30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED23D7BF28417A08007F4A30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED23D7AF283FD10F007F4A30 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED23D7C028417A18007F4A30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED23D7B1283FD134007F4A30 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
