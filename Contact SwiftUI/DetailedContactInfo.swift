@@ -19,7 +19,7 @@ struct DetailedContactInfo: View {
             Image(systemName: "person.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(height: 150, alignment: .center)
+                .frame(width: 150, alignment: .center)
             HStack {
                 Image(systemName: "phone").foregroundColor(.blue)
                 Text("\(phoneNumber)")
@@ -33,8 +33,4 @@ struct DetailedContactInfo: View {
     }
 }
 
-//struct DetailedContactInfo_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailedContactInfo()
-//    }
-//}
+//Разместить по центру имедж так и не получилось(
